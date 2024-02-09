@@ -49,6 +49,7 @@ ul {
 
 li {
 	padding: 0 0 0 1rem;
+	word-wrap: break-word;
 }
 
 li:not(:last-child) {
