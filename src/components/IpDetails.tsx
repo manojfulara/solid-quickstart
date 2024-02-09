@@ -5,8 +5,6 @@ import styles from "./IpDetails.module.css"; // Create a separate CSS module
 // Define the component
 // IpDetails.jsx
 
-import { createSignal } from "solid-js";
-import styles from "./IpDetails.module.css";
 
 const IpDetails = (props) => {
   const {
