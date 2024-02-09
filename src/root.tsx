@@ -19,8 +19,8 @@ export default function Root() {
     <Html lang="en" class="show-my-ip">
       <Head>
       
-<Title>Show My IP - Your IPv4 and IPv6 Address</Title>
-<Meta name="description" content="Check and display your IPv4 and IPv6 addresses on this website." />
+<Title>What Is My IP Address - Your Public IPv4 and IPv6 Address</Title>
+<Meta name="description" content="Check and display your public IPv4 and IPv6 addresses on this website." />
 
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
