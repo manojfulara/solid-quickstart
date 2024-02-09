@@ -42,7 +42,7 @@ export default function Home() {
       <p><strong>{ipv4Address()}</strong></p>
       <h1>Your  <strong>IPv4</strong> Address:</h1>
       <p><strong>{ipv6Address()}</strong></p>
-      <IpDetails data={ispData} />
+      <IpDetails data={ispData()} />
     </main>
   );
 }
