@@ -20,14 +20,17 @@ export default function Home() {
     console.log("displaying ip");
     const ipv4AddressValue = await getIpAddress("https://api.ipify.org?format=json");
     const ipv6AddressValue = await getIpAddress("https://api64.ipify.org?format=json");
-    console.log("displaying ip s",ipv4AddressValue,ipv6AddressValue);
+    console.log("displaying ip s", ipv4AddressValue, ipv6AddressValue);
     setIPv4Address(ipv4AddressValue);
     setIPv6Address(ipv6AddressValue);
   }
 
-  // Run the displayIPv4Address function when the component mounts
+  // Run the displayIPv4Address function immediately when the component mounts
+  displayIPv4Address();
+
+  // Cleanup function (optional)
   onCleanup(() => {
-    window.onload = displayIPv4Address();
+    // Perform cleanup here if needed
   });
 
   return (
