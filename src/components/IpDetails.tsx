@@ -60,9 +60,9 @@ const IpDetails = (props) => {
         <li><strong>ISP:</strong> {isp}</li>
         <li><strong>Connection Type:</strong> {connection_type}</li>
         <li><strong>Organization:</strong> {organization}</li>
-        <li><strong>Currency:</strong> {currency.code} ({currency.symbol}) - {currency.name}</li>
-        <li><strong>Time Zone:</strong> {time_zone.name} (UTC{time_zone.offset_with_dst > 0 ? '+' : ''}{time_zone.offset_with_dst})</li>
-        <li><strong>Current Time:</strong> {time_zone.current_time}</li>
+        <li><strong>Currency:</strong> {currency?.code} ({currency?.symbol}) - {currency?.name}</li>
+        <li><strong>Time Zone:</strong> {time_zone?.name} (UTC{time_zone?.offset_with_dst > 0 ? '+' : ''}{time_zone?.offset_with_dst})</li>
+        <li><strong>Current Time:</strong> {time_zone?.current_time}</li>
       </ul>
     </div>
   );
