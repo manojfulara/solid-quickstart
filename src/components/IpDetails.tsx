@@ -5,6 +5,7 @@ import styles from "./IpDetails.module.css"; // Create a separate CSS module
 // Define the component
 const IpDetails = (props) => {
   // Destructure the JSON data from props
+  console.log("IpDetails",props);
   const { query, status, country, countryCode, region, regionName, city, zip, lat, lon, timezone, isp, org, as } = props.data;
 
   return (
