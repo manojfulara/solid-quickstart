@@ -35,9 +35,7 @@ const IpDetails = (props) => {
     currency,
     time_zone,
   } = props.data;
-console.log("meowio", ip,
-    continent_code,
-    continent_name,
+console.log("meowio", props,
     country_code2);
   return (
     <div class={styles.ipDetails}>
