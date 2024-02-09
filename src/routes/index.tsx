@@ -4,7 +4,7 @@ import IpDetails from "~/components/IpDetails";
 export default function Home() {
   const [ipv4Address, setIPv4Address] = createSignal("Loading...");
   const [ipv6Address, setIPv6Address] = createSignal("Loading...");
-  const [ispData, setIspData] = createSignal("Loading...");
+  const [ispData, setIspData] = createSignal({ status: "Loading..." });
 
   async function getData(apiAddress) {
     try {
