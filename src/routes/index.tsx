@@ -5,11 +5,11 @@ export default function Home() {
   const [ipv4Address, setIPv4Address] = createSignal("Loading...");
   const [ipv6Address, setIPv6Address] = createSignal("Loading...");
 
-  async function getIpAddress(apiAddress) {
+  async function getData(apiAddress) {
     try {
       const response = await fetch(apiAddress);
       const data = await response.json();
-      return data.ip;
+      return data;
     } catch (error) {
       console.error("Error fetching IP address:", error.message);
       return "Error";
@@ -18,11 +18,12 @@ export default function Home() {
 
   async function displayIPv4Address() {
     console.log("displaying ip");
-    const ipv4AddressValue = await getIpAddress("https://api.ipify.org?format=json");
-    const ipv6AddressValue = await getIpAddress("https://api64.ipify.org?format=json");
-    console.log("displaying ip s", ipv4AddressValue, ipv6AddressValue);
-    setIPv4Address(ipv4AddressValue);
-    setIPv6Address(ipv6AddressValue);
+    const ipv4AddressValue = await getData("https://api.ipify.org?format=json");
+    const ipv6AddressValue = await getData("https://api64.ipify.org?format=json");
+    const ispData = await getData(`http://ip-api.com/json/${ipv4AddressValue.ip}`);
+    console.log("displaying ip s", ipv4AddressValue.ip, ipv6AddressValue.ip);
+    setIPv4Address(ipv4AddressValue.ip);
+    setIPv6Address(ipv6AddressValue.ip);
   }
 
   // Run the displayIPv4Address function immediately when the component mounts
