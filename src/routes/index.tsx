@@ -21,7 +21,7 @@ export default function Home() {
     console.log("displaying ip");
     const ipv4AddressValue = await getData("https://api.ipify.org?format=json");
     const ipv6AddressValue = await getData("https://api64.ipify.org?format=json");
-    const ispData = await getData(`http://ip-api.com/json/${ipv4AddressValue.ip}`);
+    const ispData = await getData(`https://api.ipgeolocation.io/ipgeo?apiKey=f9e57961613748b390728a6ae5ea6174&ip=${ipv4AddressValue.ip}`);
     console.log("displaying ip s", ipv4AddressValue.ip, ipv6AddressValue.ip,ispData);
     setIPv4Address(ipv4AddressValue.ip);
     setIPv6Address(ipv6AddressValue.ip);
