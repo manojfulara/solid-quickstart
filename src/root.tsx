@@ -21,14 +21,7 @@ export default function Root() {
       
 <Title>What Is My IP Address - Your Public IPv4 and IPv6 Address</Title>
 <Meta name="description" content="Check and display your public IPv4 and IPv6 addresses on this website. my ip v4 " />
-        <Meta name="keywords" content="IPv4, IP address, geolocation , my ip location,what is my ip,my ip show,
-what is my ipv4 address ,
-what is my ip address vpn ,
-my ip country,
-what is my ip address wifi,
-what is my private ip,
-what is my public ip,
-what is my ip on my phone?,vpn" />
+<Meta name="keywords" content="IPv4, IP address, geolocation , my ip location,what is my ip,my ip show,what is my ipv4 address ,what is my ip address vpn ,my ip country,what is my ip address wifi,what is my private ip,what is my public ip,what is my ip on my phone?,vpn" />
 
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
