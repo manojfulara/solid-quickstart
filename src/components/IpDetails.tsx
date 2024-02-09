@@ -34,7 +34,7 @@ const IpDetails = (props) => {
     organization,
     currency,
     time_zone,
-  } = props;
+  } = props.data;
 console.log("meowio", ip,
     continent_code,
     continent_name,
