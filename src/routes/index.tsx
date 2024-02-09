@@ -35,9 +35,9 @@ export default function Home() {
 
   return (
     <main>
-      <h1>Your IPv4 Address:</h1>
+      <h1>Your  <strong>IPv4</strong> Address:</h1>
       <p>{ipv4Address()}</p>
-      <h1>Your IPv6 Address:</h1>
+      <h1>Your  <strong>IPv4</strong> Address:</h1>
       <p>{ipv6Address()}</p>
     </main>
   );
